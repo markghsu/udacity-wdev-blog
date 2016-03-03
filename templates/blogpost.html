@@ -1,0 +1,8 @@
+{% extends "blogheader.html" %}
+{% block content %}
+<h2>{{post.subject}}</h2>
+<pre>
+{{post.content}}
+</pre>
+<div>Last Queried {{time}} seconds ago</div>
+{% endblock %}

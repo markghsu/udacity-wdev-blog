@@ -1,0 +1,10 @@
+{% extends "blogheader.html" %}
+{% block content %}
+<form method="post">
+	<h2>new post</h2>
+	<label>Subject:<br/><input type="text" name="subject" value="{{subject}}"></label><br/>
+	<label>Content:<br/><textarea name="content">{{content}}</textarea></label><br/>
+	<input type="submit">
+	<div class="error"> {{error}}</div>
+</form>
+{% endblock %}
